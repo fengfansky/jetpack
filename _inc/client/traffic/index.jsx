@@ -68,13 +68,6 @@ export class Traffic extends React.Component {
 			<div>
 				<QuerySite />
 				{
-					foundPrivateSites && (
-						<Private
-							{ ...commonProps }
-						/>
-					)
-				}
-				{
 					foundSearch && (
 						<Search
 							{ ...commonProps }
@@ -133,6 +126,13 @@ export class Traffic extends React.Component {
 				{
 					foundVerification && (
 						<VerificationServices
+							{ ...commonProps }
+						/>
+					)
+				}
+				{
+					foundPrivateSites && (
+						<Private
 							{ ...commonProps }
 						/>
 					)
