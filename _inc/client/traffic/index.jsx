@@ -15,7 +15,6 @@ import QuerySite from 'components/data/query-site';
 import { SEO } from './seo';
 import { GoogleAnalytics } from './google-analytics';
 import { Ads } from './ads';
-import Private from './private';
 import { SiteStats } from './site-stats';
 import { RelatedPosts } from './related-posts';
 import Search from './search';
@@ -43,7 +42,6 @@ export class Traffic extends React.Component {
 			foundVerification = this.props.isModuleFound( 'verification-tools' ),
 			foundSitemaps = this.props.isModuleFound( 'sitemaps' ),
 			foundSearch = this.props.isModuleFound( 'search' ),
-			foundPrivateSites = this.props.isModuleFound( 'private' ),
 			foundAnalytics = this.props.isModuleFound( 'google-analytics' );
 
 		if ( ! this.props.searchTerm && ! this.props.active ) {
@@ -58,7 +56,6 @@ export class Traffic extends React.Component {
 			! foundVerification &&
 			! foundSitemaps &&
 			! foundAnalytics &&
-			! foundPrivateSites &&
 			! foundSearch
 		) {
 			return null;
@@ -126,13 +123,6 @@ export class Traffic extends React.Component {
 				{
 					foundVerification && (
 						<VerificationServices
-							{ ...commonProps }
-						/>
-					)
-				}
-				{
-					foundPrivateSites && (
-						<Private
 							{ ...commonProps }
 						/>
 					)
