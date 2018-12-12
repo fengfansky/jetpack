@@ -134,7 +134,7 @@
     "uglify-save-license": "0.4.1",
     "url-loader": "1.1.2",
     "webpack": "4.27.1",
-    "whatwg-fetch": "3.0.0"
+    "whatwg-fetch": "2.0.4"
   },
   "devDependencies": {
     "babel-register": "6.26.0",
