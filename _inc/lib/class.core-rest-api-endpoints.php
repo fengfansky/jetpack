@@ -948,7 +948,7 @@ class Jetpack_Core_Json_Api_Endpoints {
 	/**
 	 * Test connection permission check method.
 	 *
-	 * @since 6.8.0
+	 * @since 6.9.0
 	 *
 	 * @return bool
 	 */
@@ -985,7 +985,7 @@ class Jetpack_Core_Json_Api_Endpoints {
 	/**
 	 * Test connection status for this Jetpack site, encrypt the results for decryption by a third-party.
 	 *
-	 * @since 6.8.0
+	 * @since 6.9.0
 	 *
 	 * @return array|mixed|object|WP_Error
 	 */
