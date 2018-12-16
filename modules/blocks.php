@@ -7,6 +7,13 @@
  */
 
 jetpack_register_block(
+	'giphy',
+	array(
+		'render_callback' => 'jetpack_giphy_block_load_assets',
+	)
+);
+
+jetpack_register_block(
 	'map',
 	array(
 		'render_callback' => 'jetpack_map_block_load_assets',
@@ -14,6 +21,19 @@ jetpack_register_block(
 );
 
 jetpack_register_block( 'vr' );
+
+/**
+ * Giphy block registration/dependency declaration.
+ *
+ * @param array  $attr - Array containing the map block attributes.
+ * @param string $content - String containing the map block content.
+ *
+ * @return string
+ */
+function jetpack_giphy_block_load_assets( $attr, $content ) {
+	Jetpack_Gutenberg::load_assets_as_required( 'giphy' );
+	return $content;
+}
 
 /**
  * Map block registration/dependency declaration.
