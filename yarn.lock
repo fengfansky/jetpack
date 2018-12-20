@@ -7087,10 +7087,10 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.0.0.tgz#85080bb87c64688fa47996fe8f7dfbe8211760b1"
   integrity sha512-hMp0onDKIajHfIkdRk3P4CdCmErkYAxxDtP3Wx/4nZ3aGlau2VKh3mZpcuFkH27WQkL/3WBCPOktzA9ZOAnMQQ==
 
-page@1.7.1:
-  version "1.7.1"
-  resolved "http://registry.npmjs.org/page/-/page-1.7.1.tgz#3886c147b895487783759b37e800a11213bc38ed"
-  integrity sha1-OIbBR7iVSHeDdZs36AChEhO8OO0=
+page@1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/page/-/page-1.11.3.tgz#4083dfae31e077be4d96489e3e75a2afe2b84b8d"
+  integrity sha512-DsVPU2MEXfR9IA+K1sGlEWy95gqklEk+PkvnDCURWiCI/g8j6WDzXDVMsEJsfvPuscnNW/oi8p2h9ge3piCrsg==
   dependencies:
     path-to-regexp "~1.2.1"
 
